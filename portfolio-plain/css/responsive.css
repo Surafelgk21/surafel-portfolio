@@ -1,0 +1,5 @@
+@media (max-width: 576px) {
+  .section-padding { padding: 70px 0; }
+  .section-title h2 { font-size: 28px; }
+  .contact-box { padding: 24px; }
+}

@@ -1,0 +1,110 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: calc(var(--nav-height) + 20px);
+  padding-bottom: 40px;
+  overflow: hidden;
+  background:
+    linear-gradient(rgba(30, 32, 56, 0.95), rgba(30, 32, 56, 0.95)),
+    radial-gradient(circle at top right, rgba(255, 77, 109, 0.12), transparent 30%);
+}
+
+.hero::before {
+  content: "Surafel Jibruk";
+  position: absolute;
+  left: 8%;
+  top: 48%;
+  transform: translateY(-50%) rotate(-12deg);
+  font-size: 88px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.04);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.social-icons a {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: 0.3s;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.social-icons a:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.hero-subtitle {
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.hero h1 { font-size: 52px; font-weight: 800; line-height: 1.2; margin-bottom: 10px; }
+
+.hero p { color: var(--text-muted); max-width: 520px; margin-bottom: 18px; }
+
+.hero .hero-role { font-size: 20px; font-weight: 500; color: #fff; min-height: 34px; margin-bottom: 14px; }
+.typed { color: var(--accent); }
+.cursor { color: var(--accent); animation: blink 1s steps(1) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+
+.btn-group-wrap { margin-top: 12px; }
+
+.video-btn {
+  width: 52px;
+  height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-size: 18px;
+  margin-left: 15px;
+  transition: 0.3s;
+  border: none;
+}
+.video-btn:hover { background: var(--accent-dark); transform: scale(1.06); color: #fff; }
+
+.hero-img-wrap { text-align: center; position: relative; }
+
+.hero-img-wrap img {
+  max-width: 100%;
+  width: 380px;
+  height: auto;
+  max-height: 600px;
+  border-radius: 24px;
+  object-fit: cover;
+  object-position: top;
+  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.25));
+}
+
+@media (max-width: 991px) {
+  .hero { text-align: center; min-height: auto; padding-bottom: 70px; }
+  .hero::before { font-size: 52px; top: 55%; left: 50%; transform: translate(-50%, -50%) rotate(-12deg); }
+  .hero p { margin-left: auto; margin-right: auto; }
+  .social-icons { justify-content: center; }
+  .btn-group-wrap { justify-content: center; }
+  .hero-img-wrap { margin-top: 20px; }
+  .hero h1 { font-size: 38px; }
+}
+
+@media (max-width: 576px) {
+  .hero h1 { font-size: 30px; }
+  .hero .hero-role { font-size: 17px; }
+  .video-btn { margin-left: 12px; }
+}

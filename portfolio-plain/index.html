@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surafel Jibruk | Web Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Surafel Jibruk - web developer in Addis Ababa, Ethiopia. Responsive websites, web design and video editing."
+    />
+    <meta name="theme-color" content="#1b1d33" />
+    <meta property="og:title" content="Surafel Jibruk | Web Developer Portfolio" />
+    <meta property="og:description" content="Clean, modern and responsive websites for personal brands and businesses." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <!-- Bootstrap 5 + Icons + Poppins font (loaded from CDN, no install needed) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Our styles (order matters) -->
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/sections.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-root-margin="-45% 0px -50% 0px" data-bs-smooth-scroll="true" tabindex="0">
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+    <!-- ============ Navbar ============ -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#home">Surafel<span>.</span>Gk</a>
+
+        <button
+          class="navbar-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list fs-1 text-white"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- ============ Hero ============ -->
+      <section class="hero" id="home">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <div class="social-icons d-flex mb-4">
+                <a href="https://www.facebook.com/profile.php?id=100008284055552" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/surafel-jibruk-799555408" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="https://wa.me/251912631082" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                <a href="mailto:surafelgk61@gmail.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+                <!-- Add more when you have the links:
+                <a href="https://github.com/YOUR-NAME" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                <a href="https://instagram.com/YOUR-NAME" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://x.com/YOUR-NAME" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+                -->
+              </div>
+
+              <div class="hero-subtitle">Personal Portfolio</div>
+              <h1>I am Surafel Jibruk</h1>
+              <p class="hero-role">
+                I'm a <span id="typed-role" class="typed" aria-live="off"></span><span class="cursor">|</span>
+              </p>
+              <p>
+                I'm Surafel, a professional web developer with junior-level experience
+                in this field. I build clean, modern and responsive websites for personal
+                brands and businesses.
+              </p>
+
+              <div class="btn-group-wrap d-flex align-items-center">
+                <a href="#portfolio" class="btn btn-custom btn-outline-custom">My Portfolio</a>
+                <a href="#contact" class="video-btn" aria-label="Contact me" title="Contact me">
+                  <i class="bi bi-chat-dots-fill"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="hero-img-wrap">
+                <img src="images/hero.jpg" alt="Portrait of Surafel Jibruk" width="380" height="680" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Services ============ -->
+      <section class="services section-padding" id="services">
+        <div class="container">
+          <div class="section-title text-center mb-5 reveal">
+            <span class="small-title">Services</span>
+            <h2>My Services</h2>
+            <p>
+              Web development, web design and video editing to help individuals and brands
+              build a strong online presence.
+            </p>
+            <div class="title-line"></div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4 reveal">
+              <div class="service-card">
+                <div class="service-icon"><i class="bi bi-code-slash"></i></div>
+                <h5>Web Development</h5>
+                <p>Responsive and fast websites built with clean code and modern UI practices.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 reveal">
+              <div class="service-card">
+                <div class="service-icon"><i class="bi bi-palette"></i></div>
+                <h5>Web Design</h5>
+                <p>Elegant, user-friendly interface design focused on readability and conversion.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 reveal">
+              <div class="service-card">
+                <div class="service-icon"><i class="bi bi-camera-video"></i></div>
+                <h5>Video Editing</h5>
+                <p>Creative editing for promos, reels, personal branding, and social media content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Skills ============ -->
+      <section class="section-padding" id="skills">
+        <div class="container">
+          <div class="section-title text-center mb-5 reveal">
+            <span class="small-title">Skills</span>
+            <h2>What I Work With</h2>
+            <p>The tools and skills I use to turn ideas into finished websites and videos.</p>
+            <div class="title-line"></div>
+          </div>
+
+          <div class="skills-grid reveal">
+            <div class="skill-tile">
+              <i class="bi bi-code-slash"></i>
+              <span>HTML &amp; CSS</span>
+            </div>
+            <div class="skill-tile">
+              <i class="bi bi-filetype-js"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-tile">
+              <i class="bi bi-bootstrap"></i>
+              <span>Bootstrap &amp; Responsive Design</span>
+            </div>
+            <div class="skill-tile">
+              <i class="bi bi-palette"></i>
+              <span>UI / Web Design</span>
+            </div>
+            <div class="skill-tile">
+              <i class="bi bi-camera-video"></i>
+              <span>Video Editing</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Portfolio ============ -->
+      <section class="section-alt section-padding" id="portfolio">
+        <div class="container">
+          <div class="section-title text-center mb-5 reveal">
+            <span class="small-title">Portfolio</span>
+            <h2>Recent Work</h2>
+            <p>A few project samples to showcase style, responsiveness, and layout quality.</p>
+            <div class="title-line"></div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4 reveal">
+              <div class="portfolio-card">
+                <a href="https://netflix-clone-10gg8iw4a-surafel5.vercel.app/" target="_blank" rel="noopener noreferrer" class="portfolio-thumb has-image" aria-label="Open Netflix live demo">
+                  <img src="images/netflix.jpg" alt="Netflix homepage preview" loading="lazy" />
+                </a>
+                <div class="portfolio-content">
+                  <h5>Netflix</h5>
+                  <p>Netflix-style streaming interface with a dark UI, movie rows, and a responsive layout.</p>
+                  <a href="https://netflix-clone-10gg8iw4a-surafel5.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-custom btn-accent btn-sm portfolio-link mt-3">View Live <i class="bi bi-box-arrow-up-right ms-1"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 reveal">
+              <div class="portfolio-card">
+                <a href="https://forum-project-gamma.vercel.app" target="_blank" rel="noopener noreferrer" class="portfolio-thumb has-image" aria-label="Open Evangadi Forum live demo">
+                  <img src="images/evangadi-forum.jpg" alt="Evangadi Forum sign-in page preview" loading="lazy" />
+                </a>
+                <div class="portfolio-content">
+                  <h5>Evangadi Forum</h5>
+                  <p>Community Q&amp;A forum where users can sign up, ask questions, and post answers.</p>
+                  <a href="https://forum-project-gamma.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-custom btn-accent btn-sm portfolio-link mt-3">View Live <i class="bi bi-box-arrow-up-right ms-1"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 reveal">
+              <div class="portfolio-card">
+                <a href="https://chatgpt-clone-mu-ten.vercel.app/" target="_blank" rel="noopener noreferrer" class="portfolio-thumb has-image" aria-label="Open ChatGPT live demo">
+                  <img src="images/chatgpt.jpg" alt="ChatGPT clone chat interface preview" loading="lazy" />
+                </a>
+                <div class="portfolio-content">
+                  <h5>ChatGPT</h5>
+                  <p>ChatGPT clone with a React frontend, Express backend, and AI-powered chat responses.</p>
+                  <a href="https://chatgpt-clone-mu-ten.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-custom btn-accent btn-sm portfolio-link mt-3">View Live <i class="bi bi-box-arrow-up-right ms-1"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Process ============ -->
+      <section class="section-padding" id="process">
+        <div class="container">
+          <div class="section-title text-center mb-5 reveal">
+            <span class="small-title">Process</span>
+            <h2>How I Work</h2>
+            <p>A simple, clear process from your first message to launch day.</p>
+            <div class="title-line"></div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-3 reveal">
+              <div class="process-step">
+                <span class="process-num">01</span>
+                <h5>Discuss</h5>
+                <p>We talk about your goals, audience and what you need.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 reveal">
+              <div class="process-step">
+                <span class="process-num">02</span>
+                <h5>Design</h5>
+                <p>I prepare a clean layout or storyboard for your approval.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 reveal">
+              <div class="process-step">
+                <span class="process-num">03</span>
+                <h5>Build</h5>
+                <p>I code the site or edit the video, sharing progress along the way.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 reveal">
+              <div class="process-step">
+                <span class="process-num">04</span>
+                <h5>Launch</h5>
+                <p>Final tweaks, testing on all devices, and delivery.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Contact ============ -->
+      <section class="section-alt section-padding" id="contact">
+        <div class="container">
+          <div class="section-title text-center mb-5 reveal">
+            <span class="small-title">Contact</span>
+            <h2>Get In Touch</h2>
+            <p>Want a personal portfolio or website like this? Send a message anytime.</p>
+            <div class="title-line"></div>
+          </div>
+
+          <div class="row g-4 mb-4 justify-content-center">
+            <div class="col-md-4 reveal">
+              <a class="contact-card" href="mailto:surafelgk61@gmail.com">
+                <i class="bi bi-envelope-fill"></i>
+                <span>Email</span>
+                <strong>surafelgk61@gmail.com</strong>
+              </a>
+            </div>
+            <div class="col-md-4 reveal">
+              <a class="contact-card" href="tel:+251912631082">
+                <i class="bi bi-telephone-fill"></i>
+                <span>Phone</span>
+                <strong>+251 912 631 082</strong>
+              </a>
+            </div>
+            <div class="col-md-4 reveal">
+              <a class="contact-card" href="https://wa.me/251912631082" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-whatsapp"></i>
+                <span>WhatsApp</span>
+                <strong>Chat with me</strong>
+              </a>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-lg-8 reveal">
+              <div class="contact-box">
+                <div id="form-alert" class="alert d-none" role="alert"></div>
+
+                <form id="contact-form" novalidate>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <input type="text" name="name" class="form-control p-3" placeholder="Your Name" aria-label="Your name" required minlength="2" />
+                      <div class="invalid-feedback">Please enter your name.</div>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="email" name="email" class="form-control p-3" placeholder="Your Email" aria-label="Your email" required />
+                      <div class="invalid-feedback">Please enter a valid email address.</div>
+                    </div>
+                    <div class="col-12">
+                      <input type="text" name="subject" class="form-control p-3" placeholder="Subject" aria-label="Subject" required minlength="3" />
+                      <div class="invalid-feedback">Please enter a subject.</div>
+                    </div>
+                    <div class="col-12">
+                      <textarea name="message" class="form-control p-3" rows="6" placeholder="Your Message" aria-label="Your message" required minlength="10"></textarea>
+                      <div class="invalid-feedback">Please write a message (at least 10 characters).</div>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-custom btn-accent" id="submit-btn">Send Message</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p class="mb-0">&copy; <span id="year">2026</span> Surafel Jibruk. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Floating WhatsApp button -->
+    <a href="https://wa.me/251912631082" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Back to top -->
+    <button type="button" id="back-to-top" class="back-to-top" aria-label="Back to top">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/typing.js"></script>
+    <script src="js/reveal.js"></script>
+    <script src="js/scrollProgress.js"></script>
+    <script src="js/backToTop.js"></script>
+    <script src="js/contactForm.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

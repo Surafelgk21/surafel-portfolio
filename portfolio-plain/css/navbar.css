@@ -1,0 +1,27 @@
+.navbar {
+  background: var(--bg-nav);
+  padding: 18px 0;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  transition: padding 0.3s, background 0.3s;
+}
+
+.navbar.scrolled { padding: 10px 0; background: rgba(27, 29, 51, 0.96); backdrop-filter: blur(8px); }
+
+.navbar-brand { color: #fff !important; font-size: 28px; font-weight: 700; letter-spacing: 0.5px; }
+.navbar-brand span { color: var(--accent); }
+
+.nav-link {
+  color: #dfe1f1 !important;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 18px;
+  transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active { color: var(--accent) !important; }
+
+@media (max-width: 991px) {
+  .navbar-collapse { padding: 12px 0; }
+  .nav-link { margin-left: 0; padding: 10px 0; }
+}
